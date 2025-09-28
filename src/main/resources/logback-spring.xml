@@ -1,0 +1,9 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>{"ts":"%d{ISO8601}","lvl":"%level","thr":"%thread",
+                "reqId":"%mdc{reqId}","logger":"%logger{36}","msg":"%msg"}%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO"><appender-ref ref="STDOUT"/></root>
+</configuration>

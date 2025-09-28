@@ -1,0 +1,11 @@
+spring:
+  application.name: timefold-portfolio
+  profiles.active: h2   # ??? H2
+server.port: 8080
+management:
+  endpoints.web.exposure.include: health,info,metrics,prometheus,loggers
+  endpoint.loggers.enabled: true
+
+logging:
+  level:
+    com.example.timefold_portfolio: INFO
